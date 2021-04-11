@@ -1,0 +1,372 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+}
+span, a{
+  display: block;
+  text-decoration:  none;
+}
+a{
+  color: black;
+}
+input, button{
+  border: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, nav *, main, main > section{
+  float: left;
+}
+main > *{
+  padding: 0 15%;
+}
+nav, header{
+  width: 100%;
+}
+nav, ul{
+height: 8vh;
+}
+nav ul{
+  width: 60%;
+  margin-left: 12%;
+}
+nav ul li{
+  margin: 0 2%;
+}
+header nav form{
+  float: right;
+}
+nav ul, nav form{
+  padding-top: 2.5vh;
+}
+main > section{
+  width: 100%;
+}
+.first{
+  padding: 35vh 1% 3vh 10%;
+}
+.second{
+  margin: 15vh 0;
+}
+.second section{
+  width: 30%;
+  margin-right: 5%;
+  float: left;
+}
+.second section + section + section{
+  margin-right: 0;
+}
+.third{
+  padding: 10vh 15%;
+}
+.fourth{
+  padding: 15vh 15%;
+  position: relative;
+}
+.fourth section{
+  float: left;
+  width: 33.333%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+nav input{
+  background: white;
+  font-size: 1.8rem;
+}
+nav .book{
+  margin: 0 5% 0 0;
+}
+
+/* content: "\e090"; content: "\e035"; */
+nav .book input{
+  font-size: 1.8rem;
+  background: white;
+  font-weight: bold;
+}
+.first{
+  background-image: url("../assets/salon-main-img.jpg");
+  background-size: 100% 95%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.first h1{
+  font-size: 10rem;
+  padding-right: 50%;
+  width: 90%;
+}
+.first p{
+  margin: 4vh 0;
+  font-size: 1.8rem;
+  width: 90%
+}
+.first > form{
+  width: 90%;
+}
+.first .services input{
+  width: 170px;
+  height: 60px;
+  margin-bottom: 10vh;
+  background: black;
+  color: white;
+  font-size: 1.3rem;
+}
+.firstVisit{
+  width: 290px;
+  height: 310px;
+  padding: 7vh 0.5% 4vh 2%;
+  background: black;
+  font-size: 1.8rem;
+  float: left;
+}
+.firstVisit h3{
+  font-size: 1.5rem;
+}
+.firstVisit p{
+  line-height: 40px;
+}
+.firstVisit strong{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.firstVisit form input{
+  width: 150px;
+  height: 50px;
+  background: white;
+  color: black;
+}
+.first span{
+  float: right;
+  transform: rotate(0.25turn);
+}
+.arrowButtons{
+  padding: 18vh 3% 0 0;
+}
+.round{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-weight: bold;
+  margin-right: 0.5%;
+  float: right;
+}
+.second section{
+  text-align: center;
+}
+.second h3{
+  padding: 2vh 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.second p{
+  padding: 1vh 0;
+  font-size: 1.7rem;
+}
+.third{
+  background: rgb(243,244,246);
+}
+.third section{
+  width: 50%;
+  float: left;
+  padding: 0 2%;
+}
+.third h2{
+  font-size: 3.5rem;
+  margin-bottom: 8vh;
+}
+.third form{
+  margin-top: 10vh;
+}
+.third input{
+  height: 50px;
+  width: 180px;
+  background: black;
+  color: white;
+}
+.fourth section{
+  text-align: center;
+}
+.fourth img{
+  width: 90%;
+}
+.fourth section{
+  position: relative;
+}
+.fourth div{
+  width: 75%;
+  height: 70px;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background: black;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 360px;
+}
+.fourth div span+span{
+  padding-top: 1vh;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.colorOffer{
+  background: rgb(243,244,246);
+  background-image: url("../assets/colorOfferBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 10vh 10%;
+}
+.colorOffer p{
+  font-size: 3.5rem;
+  margin: 2vh 0;
+  padding-right: 50%;
+  line-height: 50px;
+}
+.colorOffer strong{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.colorOffer form input{
+  width: 200px;
+  height: 50px;
+  background: black;
+  color: white;
+}
+.sixth h2, .sixth span{
+  margin-top: 15vh;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.sixth span{
+  margin-top: 0;
+}
+.sixth > section{
+  margin-top: 5vh;
+}
+.sixth section section, .sixth section section div{
+  float: left;
+}
+.sixth section section{
+  width: 31%;
+  margin-right: 3%;
+}
+.sixth .tall, .sixth .short{
+  width: 100%;
+  height: 500px;
+  float: left;
+  margin-top: 30px;
+}
+.sixth .short{
+  height: 300px;
+}
+.sixth section .noMarginRight{
+  margin-right: 0;
+}
+.sixth .one{
+  background-image: url("../assets/lookbook1.jpg");
+}
+.sixth .two{
+  background-image: url("../assets/lookbook2.jpg");
+  background-size: cover;
+}
+.sixth .three{
+  background-image: url("../assets/lookbook3.jpg");
+  background-size: cover;
+}
+.sixth .four{
+  background: black;
+  text-align: center;
+  color: gray;
+}
+.sixth .four span{
+  padding-top: 45px;
+  font-size: 20rem;
+}
+.sixth .five{
+  background-image: url("../assets/lookbook5.jpg");
+  background-size: cover;
+}
+.sixth .six{
+  background-image: url("../assets/lookbook6.jpg");
+  background-size: cover;
+}
+@media screen and (max-width: 500px){
+  nav ul{
+    display: none;
+  }
+  header, main{
+    width: 100%;
+  }
+  .first{
+    background-size: cover;
+    background-position: center;
+  }
+  .first h1{
+    font-size: 7rem;
+  }
+  .first span{
+    transform: none;
+    float: left;
+    font-size: 1.5rem;
+  }
+  .first .arrowButtons{
+    display: none;
+  }
+  .second section{
+    width: 100%;
+  }
+  .third section{
+    width: 100%;
+    text-align: center;
+  }
+  .third img{
+    width: 100%;
+    margin-top: 10vh;
+  }
+  .fourth{
+    margin-top: 9vh;
+    padding-top: 0;
+  }
+  .fourth > section{
+    width: 100%;
+    margin: 3vh 0 10vh 0;
+  }
+  .fourth > section + section + section{
+    margin-bottom: 0;
+  }
+  .sixth section section{
+    width: 100%;
+  }
+}

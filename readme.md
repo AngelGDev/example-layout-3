@@ -1,0 +1,1 @@
+This series of layouts are some of the first I've ever coded as a developer, trying to replicate other sites for practice
